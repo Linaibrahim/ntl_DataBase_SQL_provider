@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pcworld.inventorynew.AddProduct">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="21dp"
+        android:text="Name of the product:" />
+
+    <EditText
+        android:id="@+id/editNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:ems="10"
+        android:hint="name" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editNameEdit"
+        android:layout_below="@+id/editNameEdit"
+        android:layout_marginTop="16dp"
+        android:text="price of the product:" />
+
+    <EditText
+        android:id="@+id/editPriceEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:hint="price" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editPriceEdit"
+        android:layout_below="@+id/editPriceEdit"
+        android:layout_marginTop="12dp"
+        android:text="Quantity of the product:" />
+
+    <EditText
+        android:id="@+id/editQuantityEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:ems="10"
+        android:hint="quantity" />
+
+    <Button
+        android:id="@+id/AddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_toEndOf="@+id/editPriceEdit"
+        android:text="Add product" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editQuantityEdit"
+        android:layout_centerVertical="true"
+        android:text="Supplier Name" />
+
+    <EditText
+        android:id="@+id/editSupplierNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editQuantityEdit"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:hint="Supplier Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editSupplierNameEdit"
+        android:layout_below="@+id/editSupplierNameEdit"
+        android:layout_marginTop="34dp"
+        android:text="Supplier phone" />
+
+    <EditText
+        android:id="@+id/editSupplierPhoneAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:ems="10"
+        android:hint="Supplier phone"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
